@@ -69,18 +69,13 @@ Response :
 ```
 
 ### delete table 
-Link:[/api/v1/table/delete/]()
+Link:[/api/v1/table/delete/:id]()
 <br><br>
 **headers**
 <br><br>
 token: Required
 <br><br>
 Method: **POST**	
-<br><br>
-**BODY**
-<br><br>
-table_id: Required
-<br><br>
 Response :
 ```
 {
