@@ -107,6 +107,25 @@ Response :
 
 ```
 
+### add servey 
+Link:[/api/v1/servey/add/]()
+<br><br>
+**headers**
+<br><br>
+token: Required
+<br><br>
+Method: **POST**	
+<br><br>
+**BODY**
+<br><br>
+Response :
+```
+{
+  "msg":"table has been add"
+}
+
+```
+
 
 
 
