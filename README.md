@@ -97,7 +97,7 @@ Response :
 ```
 
 ### delete table 
-Link:[/api/v1/table/delete/:id]()
+Link:[/api/v1/table/delete/table_id]()
 <br><br>
 **headers**
 <br><br>
@@ -123,6 +123,7 @@ Method: **POST**
 **BODY**
 <br><br>
 name: Required
+<br><br>
 Response :
 ```
 {
@@ -151,9 +152,9 @@ clean:Required||folt,
 <br><br>
 wc:Required||folt,
 <br><br>
-Ajowaa:Required||folt,
+ajowaa:Required||folt,
 <br><br>
-Would:Required||boolean,
+would:Required||boolean,
 <br><br>
 name:Required||string,
 <br><br>
