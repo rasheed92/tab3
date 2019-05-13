@@ -33,6 +33,8 @@ password: Required
 <br><br>
 name: Required
 <br><br>
+page_name: Required
+<br><br>
 phone: Required
 <br><br>
 logo: Required
@@ -62,6 +64,7 @@ Response :
     {
       "_id": 34dtg3ea235223,
       "name":"table1",
+      "page_name": "page_name",
       "email": email@emil.com,
       "phone":"0989990",
       "logo":"url",
@@ -97,13 +100,18 @@ Response :
 ```
 
 ### delete table 
-Link:[/api/v1/table/delete/table_id]()
+Link:[/api/v1/table/delete]()
 <br><br>
 **headers**
 <br><br>
 token: Required
 <br><br>
-Method: **POST**	
+<br><br>
+Method: **POST**
+<br><br>
+**body**
+table_id: Required
+<br><br>
 Response :
 ```
 {
@@ -142,11 +150,10 @@ token: Required
 Method: **POST**	
 <br><br>
 **BODY**
+<br><br>
 food:Required||float,
 <br><br>
 sevice:Required||float,
-<br><br>
-food:Required||float,
 <br><br>
 clean:Required||float,
 <br><br>
@@ -184,8 +191,8 @@ Response :
 {
   "servey":[
     {
-    _id:"232adawd2232323"
-     food:4.5
+    _id:"232adawd2232323",
+     food:4.5,
     "sevice":4,
     "food":4.5,
     "clean":5,
@@ -199,8 +206,8 @@ Response :
     "date":"13/05/2019:04:35:43"
     },
         {
-    _id:"232adawd2252323"
-     food:4.5
+    _id:"232adawd2252323",
+     food:4.5,
     "sevice":4,
     "food":4.5,
     "clean":5,
@@ -214,8 +221,8 @@ Response :
     "date":"13/05/2019:05:35:43"
     },
         {
-    _id:"232adawd332323"
-     food:4.5
+    _id:"232adawd332323",
+     food:4.5,
     "sevice":4,
     "food":4.5,
     "clean":5,
