@@ -122,6 +122,7 @@ Method: **POST**
 <br><br>
 **BODY**
 <br><br>
+name: Required
 Response :
 ```
 {
@@ -140,15 +141,92 @@ token: Required
 Method: **POST**	
 <br><br>
 **BODY**
+food:Required||folt,
+<br><br>
+sevice:Required,
+<br><br>
+food:Required||folt,
+<br><br>
+clean:Required||folt,
+<br><br>
+wc:Required||folt,
+<br><br>
+Ajowaa:Required||folt,
+<br><br>
+Would:Required||boolean,
+<br><br>
+name:Required||string,
+<br><br>
+email:Required||string,
+<br><br>
+age:Required||string||13/05/2019,
+<br><br>
+phone:Required||string,
+Response :
+```
+{
+  "msg":"servey has been add"
+}
+
+```
+### Get servey 
+Link:[api/v1/servey/table_id]()
+<br><br>
+Method: **GET**	
+<br><br>
+**headers**
+<br><br>
+token:Required
 <br><br>
 Response :
 ```
 {
-  "msg":"table has been add"
+  "servey":[
+    {
+    _id:"232adawd2232323"
+     food:4.5
+    "sevice":4,
+    "food":4.5,
+    "clean":5,
+    "wc":5,
+    "ajowaa":3.5,
+    "would":true,
+    "name":"m63am",
+    "email":"email@email",
+    "age":"13/05/2019",
+    "phone":"12341",
+    },
+        {
+    _id:"232adawd2252323"
+     food:4.5
+    "sevice":4,
+    "food":4.5,
+    "clean":5,
+    "wc":5,
+    "ajowaa":3.5,
+    "would":true,
+    "name":"m63am",
+    "email":"email@email",
+    "age":"13/05/2019",
+    "phone":"12341",
+    },
+        {
+    _id:"232adawd332323"
+     food:4.5
+    "sevice":4,
+    "food":4.5,
+    "clean":5,
+    "wc":5,
+    "ajowaa":3.5,
+    "would":true,
+    "name":"m63am",
+    "email":"email@email",
+    "age":"13/05/2019",
+    "phone":"12341",
+    },
+    
+    ]
 }
-
-```
-
 
 
 
