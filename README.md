@@ -142,17 +142,17 @@ token: Required
 Method: **POST**	
 <br><br>
 **BODY**
-food:Required||folt,
+food:Required||float,
 <br><br>
-sevice:Required,
+sevice:Required||float,
 <br><br>
-food:Required||folt,
+food:Required||float,
 <br><br>
-clean:Required||folt,
+clean:Required||float,
 <br><br>
-wc:Required||folt,
+wc:Required||float,
 <br><br>
-ajowaa:Required||folt,
+ajowaa:Required||float,
 <br><br>
 would:Required||boolean,
 <br><br>
