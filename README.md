@@ -31,16 +31,44 @@ email: Required
 <br><br>
 password: Required
 <br><br>
-phone_number: Required
+name: Required
 <br><br>
-Tables_number: Required
+phone: Required
 <br><br>
-type : Required
+logo: Required
+<br><br>
+admin_password: Required
 <br><br>
 Response :
 ```
 {
     "msg": "add..",
+}
+```
+
+### Get Profile 
+Link:[api/v1/auth/me]()
+<br><br>
+Method: **GET**	
+<br><br>
+**headers**
+<br><br>
+token:Required
+<br><br>
+Response :
+```
+{
+  "Profile":[
+    {
+      "_id": 34dtg3ea235223,
+      "name":"table1",
+      "email": email@emil.com,
+      "phone":"0989990",
+      "logo":"url",
+      "admin_password":"123456",
+      "type":"res",
+    }
+    ]
 }
 ```
 ### Get Tables 
@@ -57,11 +85,11 @@ Response :
 {
   "tables":[
     {
-      "id": 34dtg3ea235223,
+      "_id": 34dtg3ea235223,
       "name":"table1",
     },
       {
-      "id": 34dtg3ea235223,
+      "_id": 34dtg3ea235223,
        "name":"table2",
     }
     ]
