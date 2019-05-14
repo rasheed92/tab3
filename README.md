@@ -86,15 +86,22 @@ token:Required
 Response :
 ```
 {
-  "tables":[
-    {
-      "_id": 34dtg3ea235223,
-      "name":"table1",
-    },
-      {
-      "_id": 34dtg3ea235223,
-       "name":"table2",
-    }
+    "tables": [
+        {
+            "_id": "5cdaa90334224a0c89166142",
+            "name": "name1",
+            "uptime": "14/05/2019"
+        },
+        {
+            "_id": "5cdaa90734224a0c89166143",
+            "name": "name1",
+            "uptime": "14/05/2019"
+        },
+        {
+            "_id": "5cdaa90934224a0c89166144",
+            "name": "name2",
+            "uptime": "14/05/2019"
+        }
     ]
 }
 ```
