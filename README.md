@@ -2,7 +2,7 @@
 
 
 ### Login 
-Link:[/api/v1/auth/login/]()
+Link:[/api/v1/auth/login/](https://tab3.herokuapp.com/api/v1/auth/login/)
 <br><br>
 Method: **POST**	
 <br><br>
@@ -21,7 +21,7 @@ Response :
 
 
 ### Registration 
-Link:[/api/v1/auth/registration/]()
+Link:[/api/v1/auth/registration/](https://tab3.herokuapp.com/api/v1/auth/registration/)
 <br><br>
 Method: **POST**	
 <br><br>
@@ -41,6 +41,8 @@ logo: Required
 <br><br>
 admin_password: Required
 <br><br>
+license: Required||date
+<br><br>
 Response :
 ```
 {
@@ -49,7 +51,7 @@ Response :
 ```
 
 ### Get Profile 
-Link:[api/v1/auth/me]()
+Link:[api/v1/auth/me](https://tab3.herokuapp.com/api/v1/auth/me/)
 <br><br>
 Method: **GET**	
 <br><br>
@@ -75,7 +77,7 @@ Response :
 }
 ```
 ### Get Tables 
-Link:[api/v1/table/]()
+Link:[api/v1/table/](https://tab3.herokuapp.com/api/v1/table/)
 <br><br>
 Method: **GET**	
 <br><br>
@@ -88,17 +90,17 @@ Response :
 {
     "tables": [
         {
-            "_id": "5cdaa90334224a0c89166142",
+            "_id": "5cdaaa12315b41f55085ee09",
             "name": "name1",
             "uptime": "14/05/2019"
         },
         {
-            "_id": "5cdaa90734224a0c89166143",
-            "name": "name1",
+            "_id": "5cdaaa1a315b41f55085ee0a",
+            "name": "name3",
             "uptime": "14/05/2019"
         },
         {
-            "_id": "5cdaa90934224a0c89166144",
+            "_id": "5cdaaa1c315b41f55085ee0b",
             "name": "name2",
             "uptime": "14/05/2019"
         }
@@ -107,7 +109,7 @@ Response :
 ```
 
 ### delete table 
-Link:[/api/v1/table/delete]()
+Link:[/api/v1/table/delete](https://tab3.herokuapp.com/api/v1/table/delete)
 <br><br>
 **headers**
 <br><br>
@@ -127,7 +129,7 @@ Response :
 
 ```
 ### add table 
-Link:[/api/v1/table/add/]()
+Link:[/api/v1/table/add/](https://tab3.herokuapp.com/api/v1/table/add/)
 <br><br>
 **headers**
 <br><br>
@@ -148,7 +150,7 @@ Response :
 ```
 
 ### add servey 
-Link:[/api/v1/servey/add/]()
+Link:[/api/v1/servey/add/](https://tab3.herokuapp.com/api/v1/servey/add/)
 <br><br>
 **headers**
 <br><br>
@@ -158,25 +160,30 @@ Method: **POST**
 <br><br>
 **BODY**
 <br><br>
-food:Required||float,
+table_id:Required,
 <br><br>
-sevice:Required||float,
+food_assessment:Required||float,
 <br><br>
-clean:Required||float,
+service:Required||float,
+<br><br>
+cleanliness:Required||float,
 <br><br>
 wc:Required||float,
 <br><br>
-ajowaa:Required||float,
+atmosphere:Required||float,
 <br><br>
-would:Required||boolean,
+recommended:Required||boolean,
 <br><br>
 name:Required||string,
+<br><br>
+dishes:Required||string,
 <br><br>
 email:Required||string,
 <br><br>
 age:Required||string||13/05/2019,
 <br><br>
 phone:Required||string,
+<br><br>
 Response :
 ```
 {
@@ -185,7 +192,7 @@ Response :
 
 ```
 ### Get servey 
-Link:[api/v1/servey/table_id]()
+Link:[api/v1/servey/table_id](https://tab3.herokuapp.com/api/v1/survey/table/5cdaaa1c315b41f55085ee0b)
 <br><br>
 Method: **GET**	
 <br><br>
@@ -196,55 +203,44 @@ token:Required
 Response :
 ```
 {
-  "servey":[
-    {
-    _id:"232adawd2232323",
-     food:4.5,
-    "sevice":4,
-    "food":4.5,
-    "clean":5,
-    "wc":5,
-    "ajowaa":3.5,
-    "would":true,
-    "name":"m63am",
-    "email":"email@email",
-    "age":"13/05/2019",
-    "phone":"12341",
-    "date":"13/05/2019:04:35:43"
-    },
+    "survey": [
         {
-    _id:"232adawd2252323",
-     food:4.5,
-    "sevice":4,
-    "food":4.5,
-    "clean":5,
-    "wc":5,
-    "ajowaa":3.5,
-    "would":true,
-    "name":"m63am",
-    "email":"email@email",
-    "age":"13/05/2019",
-    "phone":"12341",
-    "date":"13/05/2019:05:35:43"
-    },
+            "_id": "5cdab0b526139a06a5da8637",
+            "user_id": "5cda9cdafbf39b10146bd006",
+            "table_id": "5cdaaa1c315b41f55085ee0b",
+            "name": "rasheed",
+            "age": "19/05/2020",
+            "email": "email@email",
+            "phone": "1234567",
+            "service": 4.5,
+            "cleanliness": 3.3,
+            "food_assessment": 4,
+            "wc": 5,
+            "atmosphere": 2,
+            "recommended": true,
+            "dishes": "sdsdsdsdsd",
+            "uptime": "14/05/2019, 3:12:37 pm",
+            "__v": 0
+        },
         {
-    _id:"232adawd332323",
-     food:4.5,
-    "sevice":4,
-    "food":4.5,
-    "clean":5,
-    "wc":5,
-    "ajowaa":3.5,
-    "would":true,
-    "name":"m63am",
-    "email":"email@email",
-    "age":"13/05/2019",
-    "phone":"12341",
-    "date":"14/05/2019:09:45:43"
-    },
-    
+            "_id": "5cdab0b726139a06a5da8638",
+            "user_id": "5cda9cdafbf39b10146bd006",
+            "table_id": "5cdaaa1c315b41f55085ee0b",
+            "name": "rasheed",
+            "age": "19/05/2020",
+            "email": "email@email",
+            "phone": "1234567",
+            "service": 4.5,
+            "cleanliness": 3.3,
+            "food_assessment": 4,
+            "wc": 5,
+            "atmosphere": 2,
+            "recommended": true,
+            "dishes": "sdsdsdsdsd",
+            "uptime": "14/05/2019, 3:12:39 pm",
+            "__v": 0
+        }
     ]
 }
-
-
+```
 
