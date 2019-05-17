@@ -41,6 +41,8 @@ logo: Required
 <br><br>
 admin_password: Required
 <br><br>
+discount: Required
+<br><br>
 license: Required||date
 <br><br>
 Response :
@@ -62,17 +64,20 @@ token:Required
 Response :
 ```
 {
-  "Profile":[
-    {
-      "_id": 34dtg3ea235223,
-      "name":"table1",
-      "page_name": "page_name",
-      "email": email@emil.com,
-      "phone":"0989990",
-      "logo":"url",
-      "admin_password":"123456",
-      "type":"res",
-    }
+    "profile": [
+        {
+            "_id": "5cddecccb57c6446044fb8ae",
+            "email": "user@user",
+            "adminPassword": "12345678",
+            "name": "admin",
+            "page_name": "@n3al",
+            "phone": "1234567",
+            "discount": 23,
+            "type": "res",
+            "logo": "24b616e0-782f-11e9-8fcd-2d4956e13321681658c0-7571-11e9-aa5f-19197b7c69d030cd8890-72a4-11e9-ac23-bddb103e8a2e63b57bd0-72a1-11e9-82a4-1b567eac89f3074ef6a0-6f90-11e9-9b6b-4d4c1d0495382222446_c673.jpg",
+            "licenseDate": "2019-06-14",
+            "uptime": "17/06/2019"
+        }
     ]
 }
 ```
@@ -90,19 +95,36 @@ Response :
 {
     "tables": [
         {
-            "_id": "5cdaaa12315b41f55085ee09",
-            "name": "name1",
-            "uptime": "14/05/2019"
+            "_id": "5cde0780a2c67a2b382cea72",
+            "name": "name 4",
+            "last_rating": 4.2,
+            "rating": 4.05,
+            "red": false,
+            "uptime": "17/05/2019"
         },
         {
-            "_id": "5cdaaa1a315b41f55085ee0a",
-            "name": "name3",
-            "uptime": "14/05/2019"
+            "_id": "5cde0785a2c67a2b382cea73",
+            "name": "name 1",
+            "last_rating": 0,
+            "rating": 0,
+            "red": false,
+            "uptime": "17/05/2019"
         },
         {
-            "_id": "5cdaaa1c315b41f55085ee0b",
-            "name": "name2",
-            "uptime": "14/05/2019"
+            "_id": "5cde0787a2c67a2b382cea74",
+            "name": "name 2",
+            "last_rating": 0,
+            "rating": 0,
+            "red": false,
+            "uptime": "17/05/2019"
+        },
+        {
+            "_id": "5cde078aa2c67a2b382cea75",
+            "name": "name 3",
+            "last_rating": 0,
+            "rating": 0,
+            "red": false,
+            "uptime": "17/05/2019"
         }
     ]
 }
@@ -184,6 +206,8 @@ age:Required||string||13/05/2019,
 <br><br>
 phone:Required||string,
 <br><br>
+**people_number:Required||number,**
+<br><br>
 Response :
 ```
 {
@@ -205,39 +229,60 @@ Response :
 {
     "survey": [
         {
-            "_id": "5cdab0b526139a06a5da8637",
-            "user_id": "5cda9cdafbf39b10146bd006",
-            "table_id": "5cdaaa1c315b41f55085ee0b",
+            "_id": "5cde0a8dac106243c48310a9",
+            "user_id": "5cddecccb57c6446044fb8ae",
+            "table_id": "5cde0780a2c67a2b382cea72",
             "name": "rasheed",
             "age": "19/05/2020",
             "email": "email@email",
             "phone": "1234567",
-            "service": 4.5,
-            "cleanliness": 3.3,
-            "food_assessment": 4,
+            "service": 4,
+            "people_number": 4,
+            "cleanliness": 5,
+            "food_assessment": 5,
             "wc": 5,
             "atmosphere": 2,
             "recommended": true,
             "dishes": "sdsdsdsdsd",
-            "uptime": "14/05/2019, 3:12:37 pm",
+            "uptime": "17/05/2019, 4:12:45 am",
             "__v": 0
         },
         {
-            "_id": "5cdab0b726139a06a5da8638",
-            "user_id": "5cda9cdafbf39b10146bd006",
-            "table_id": "5cdaaa1c315b41f55085ee0b",
+            "_id": "5cde0a201350e642cccbb987",
+            "user_id": "5cddecccb57c6446044fb8ae",
+            "table_id": "5cde0780a2c67a2b382cea72",
             "name": "rasheed",
             "age": "19/05/2020",
             "email": "email@email",
             "phone": "1234567",
-            "service": 4.5,
-            "cleanliness": 3.3,
-            "food_assessment": 4,
+            "service": 4,
+            "people_number": 4,
+            "cleanliness": 5,
+            "food_assessment": 5,
             "wc": 5,
             "atmosphere": 2,
             "recommended": true,
             "dishes": "sdsdsdsdsd",
-            "uptime": "14/05/2019, 3:12:39 pm",
+            "uptime": "17/05/2019, 4:10:56 am",
+            "__v": 0
+        },
+        {
+            "_id": "5cde09e11350e642cccbb986",
+            "user_id": "5cddecccb57c6446044fb8ae",
+            "table_id": "5cde0780a2c67a2b382cea72",
+            "name": "rasheed",
+            "age": "19/05/2020",
+            "email": "email@email",
+            "phone": "1234567",
+            "service": 4,
+            "people_number": 4,
+            "cleanliness": 5,
+            "food_assessment": 4,
+            "wc": 3,
+            "atmosphere": 2,
+            "recommended": true,
+            "dishes": "sdsdsdsdsd",
+            "uptime": "17/05/2019, 4:09:53 am",
             "__v": 0
         }
     ]
