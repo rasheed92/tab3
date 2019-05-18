@@ -66,17 +66,26 @@ Response :
 {
     "profile": [
         {
-            "_id": "5cddecccb57c6446044fb8ae",
+            "_id": "5cdff0df83b50e0c18b438e6",
             "email": "user@user",
             "adminPassword": "12345678",
-            "name": "admin",
-            "page_name": "@n3al",
+            "name": "user@user",
             "phone": "1234567",
-            "discount": 23,
+            "comp_id": {
+                "_id": "5cdfedeeee2f4922c013bc1b",
+                "email": "m@m.com",
+                "name": "m63am",
+                "page_name": "@m63am",
+                "phone": "1234567",
+                "discount": 25,
+                "type": "res",
+                "logo": "fe8d86a0-7960-11e9-9a40-e92308315370681658c0-7571-11e9-aa5f-19197b7c69d030cd8890-72a4-11e9-ac23-bddb103e8a2e63b57bd0-72a1-11e9-82a4-1b567eac89f3074ef6a0-6f90-11e9-9b6b-4d4c1d0495382222446_c673.jpg",
+                "uptime": "18/05/2019",
+                "__v": 0
+            },
             "type": "res",
-            "logo": "24b616e0-782f-11e9-8fcd-2d4956e13321681658c0-7571-11e9-aa5f-19197b7c69d030cd8890-72a4-11e9-ac23-bddb103e8a2e63b57bd0-72a1-11e9-82a4-1b567eac89f3074ef6a0-6f90-11e9-9b6b-4d4c1d0495382222446_c673.jpg",
-            "licenseDate": "2019-06-14",
-            "uptime": "17/06/2019"
+            "licenseDate": "2019-07-14",
+            "uptime": "18/05/2019"
         }
     ]
 }
