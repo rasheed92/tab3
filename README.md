@@ -17,9 +17,10 @@ password: Required
 Response :
 ```
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTE3OTY0ODksImlkIjoiNWNlYmU4OTQwZTgwMDExMGMwOTJjNjRhIiwiaWF0IjoxNTU4OTY0NDg5fQ.gpYsb-u3Vvsnc1Oa3rawhdyPHN8zOUQHKX0pEwrvq1c",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTE3OTg5ODAsImlkIjoiNWNlYmYyODM1YzNlYTg0NzE4ZjdiOTYzIiwiaWF0IjoxNTU4OTY2OTgwfQ.ikUWgFb8uPQfBIoPRN3Dy2gM8pV6PnltKM2In0bwI3E",
     "adminpassword": "123456",
-    "licenseDate": "2019-06-09"
+    "licenseDate": "2019-06-09",
+    "logo": "c75cf130-808a-11e9-8f19-c994d73f12f552422167_401757477239590_1397544111434629120_n.png"
 }
 ```
 
