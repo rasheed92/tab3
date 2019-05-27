@@ -1,6 +1,124 @@
 # tab3
 
 
+## tourism
+
+### Login 
+Link:[api/v1/tourism/login](https://tab3.herokuapp.com/api/v1/tourism/login)
+<br><br>
+Method: **POST**	
+<br><br>
+**BODY**
+<br><br>
+email: Required
+<br><br>
+password: Required
+<br><br>
+Response :
+```
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTE3OTY0ODksImlkIjoiNWNlYmU4OTQwZTgwMDExMGMwOTJjNjRhIiwiaWF0IjoxNTU4OTY0NDg5fQ.gpYsb-u3Vvsnc1Oa3rawhdyPHN8zOUQHKX0pEwrvq1c",
+    "adminpassword": "123456",
+    "licenseDate": "2019-06-09"
+}
+```
+
+
+
+
+
+### add servey 
+Link:[/api/v1/tourismsurvey/submit](https://tab3.herokuapp.com/api/v1/tourismsurvey/submit)
+<br><br>
+**headers**
+<br><br>
+token: Required
+<br><br>
+Method: **POST**	
+<br><br>
+**BODY**
+<br><br>
+name:Required,
+<br><br>
+email:Required,
+<br><br>
+phone:Required,
+<br><br>
+server:Required,
+<br><br>
+note:Required,
+<br><br>
+status:Required||INT 1 to 3,
+<br><br>
+Response :
+```
+{
+    "msg": "شكرا لتقيمك لنا"
+}
+
+```
+
+### Get servey 
+Link:[api/v1/tourismsurvey/surveies](https://tab3.herokuapp.com/api/v1/tourismsurvey/surveies)
+<br><br>
+Method: **GET**	
+<br><br>
+**headers**
+<br><br>
+token:Required
+<br><br>
+Response :
+```
+{
+  {
+    "surveies": [
+        {
+            "_id": "5cebee15f3a5585164005f80",
+            "name": "aaaaq",
+            "email": "aa@aa",
+            "phone": 1222333,
+            "server": "aea",
+            "note": "noa",
+            "status": 2,
+            "uptime": "27/05/2019, 5:03:01 pm"
+        },
+        {
+            "_id": "5cebef04dd706d19b4a98799",
+            "name": "aaaaq",
+            "email": "aa@aa",
+            "phone": 1222333,
+            "server": "aea",
+            "note": "noa",
+            "status": 1,
+            "uptime": "27/05/2019, 5:07:00 pm"
+        },
+        {
+            "_id": "5cebef07dd706d19b4a9879a",
+            "name": "aaaaq",
+            "email": "aa@aa",
+            "phone": 1222333,
+            "server": "aea",
+            "note": "noa",
+            "status": 3,
+            "uptime": "27/05/2019, 5:07:03 pm"
+        }
+    ]
+}
+```
+
+
+
+## M63am
+
+
+
+
+
+
+
+
+
+
 ### Login 
 Link:[/api/v1/auth/login/](https://tab3.herokuapp.com/api/v1/auth/login/)
 <br><br>
